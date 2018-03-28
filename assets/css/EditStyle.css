@@ -232,3 +232,13 @@
 	.prev:hover, .next:hover {
 		background-color: rgba(255, 255, 255, 0.35);
 }
+
+	.fade {
+		animation-name: fade;
+		animation-duration: 1.5s;
+}
+
+	@keyframes fade {
+		from {opacity: .35}
+		to {opacity: 1}
+}
