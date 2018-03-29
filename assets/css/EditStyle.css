@@ -13,7 +13,7 @@
 		padding: 0 1.5em;
 		height: 77%;
 		margin: 10px 0px 0px;
-	}
+}
 
 	#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23000000%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
@@ -21,12 +21,17 @@
 
 	#banner {
 		background-image: url("../../images/bannerNew.jpg");
-	}
+}
 
 	#banner:after {
 		background-color: #aebfce7a;
 		opacity: 0.75;
-	}
+}
+
+	#banner.style2:after {
+		background-color: #aebfce7a;
+		opacity: 0.75;
+}
 
 	#banner h1 {
 		color: black;
@@ -121,12 +126,26 @@
 		color: black;
 }
 
-	input[type="text"]:focus, textarea:focus {
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	input[type="tel"]:focus,
+	input[type="search"]:focus,
+	input[type="url"]:focus,
+	select:focus, 
+	textarea:focus {
 		border-color: #636363;
 		box-shadow: 0 0 0 2px #636363;
 }
 
-	input[type="text"], textarea {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="search"],
+	input[type="url"],
+	select,
+	textarea {
 		background: rgba(183, 183, 183, 0.4);
 }
 
@@ -134,7 +153,11 @@
 		background-color: white;
 }
 
-	input[type="submit"].special {
+	input[type="submit"].special,
+	input[type="reset"].special,
+	input[type="button"].special,
+	button.special,
+	.button.special {
 		color: white;
 		background-color: black;
 }
@@ -241,4 +264,31 @@
 	@keyframes fade {
 		from {opacity: .35}
 		to {opacity: 1}
+}
+
+	.select-wrapper {
+		border: gray solid 2px;
+}
+	input[type="checkbox"] + label, input[type="radio"] + label {
+		color: black;
+}
+
+	input[type="checkbox"]:checked + label:before,
+	input[type="radio"]:checked + label:before {
+		background: #e8e8e8;
+		border-color: #797979;
+}
+
+	input[type="checkbox"]:focus + label:before,
+	input[type="radio"]:focus + label:before {
+		box-shadow: 0 0 0 2px #797979;
+}
+
+	input[type="checkbox"] + label:before,
+	input[type="radio"] + label:before {
+		background: rgba(4, 4, 4, 0.35);
+}
+
+	#menu ul.links > li > a:not(.button) {
+		border-top: solid 1px rgba(0, 0, 0, 0.35);
 }
