@@ -24,7 +24,7 @@
 }
 
 	#banner {
-		background-image: url("../../images/bannerNew.jpg");
+		background-image: url("../../images/banner_custom.png");
 }
 
 	#banner:after {
@@ -311,7 +311,7 @@
 }
 
 	#banner > .inner header > :first-child:after {
-		max-width: 57%;
+		max-width: 54%;
 }
 
 
