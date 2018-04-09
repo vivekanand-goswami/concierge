@@ -341,8 +341,24 @@
 	}
 
 	#searchicon {
-		background: url(C:/Vivekanand/NewPage/images/maginifying_glass.png) left no-repeat;
+		background: url("../../images/maginifying_glass.png") left no-repeat;
 		padding-left: 37px;
 		background-size: 8%;
 		opacity: 0.6;
+		background-position-x: 10px;
+}
+
+	.signin {
+		width: 13%;
+		display: block;
+		margin: auto;
+		margin-top: 4%;
+		margin-bottom: 4%;
+}
+
+	signintext {
+		margin: auto;
+		display: block;
+		overflow: hidden;
+		float: none;
 }
