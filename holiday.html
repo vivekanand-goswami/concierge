@@ -6,7 +6,7 @@
 -->
 <html lang="en">
 	<head>
-		<title>Holiday</title>
+		<title>Home</title>
 		<meta charset="utf-8" />
 		<link rel="icon" href="images/logo_square_white_t_icon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<link rel="stylesheet" href="assets/css/EditStyle.css" />
+		<link rel="stylesheet" href="assets/css/EditStyle.css" />		
 	</head>
 	<body>
 
@@ -22,56 +22,158 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo"><img src="svg/logo_horizontal_white.svg" alt="LogoOfFlightsbank" style="height: 100%;"></a>
-						<nav>
-							<a href="#menu">Menu</a>
+					<header id="header" class="alt topnav">
+						<a href="index.html" class="logo"><img src="svg/logo_horizontal_white.svg" alt="LogoOfConcierge" style="height: 100%;"></a>
+						<input type="text" placeholder="Search.." id="searchicon" />
+						<nav style="margin: 4px 0 0">
+							<a href="#menu">Sign-In</a>
 						</nav>
 					</header>
 
 				<!-- Menu -->
 					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">home</a></li>
-							<li><a href="airline_new.html">airline</a></li>
-							<li><a href="holiday.html">holiday</a></li>
-							<li><a href="elements.html">elements</a></li>
-						</ul>
-						<ul class="actions vertical">
-							<li><a href="#" class="button special fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
+						<a href="index.html" class="signin"><img src="svg/logo_horizontal_white.svg" alt="LogoOfConcierge" style="height: 90%; width: 100%;"></a>
+
+
+						<form method="post" action="#">
+							<div class="row uniform">
+							<div class="6u 12u$(xsmall)" style="margin: auto; float: none; padding: 1% 0 0;">
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Username/Email" style="text-align:center;" />
+							</div>
+							<div class="6u$ 12u$(xsmall)" style="margin: auto; float: none; padding: 1% 0 0;">
+								<input type="password" name="password" id="demo-email" value="" placeholder="Password" style="text-align:center;" />
+							</div>
+							<div class="12u$" id="sign-in_reset">
+								<ul class="actions" style="text-align: center;">
+									<li><input type="submit" value="SignIn" class="special" onclick="home" /></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</div>
+
+							<div id="sign-or">
+								<h4 style="color:#4c4c4c;"> Or </h4>
+							</div>
+		
+							<div class="inner" id="signin-social-icon">
+								<ul class="icons" style="margin: 1%;">
+									<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon alt fa-google"><span class="label">Google</span></a></li>
+									<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</div>
+							<div class="12u$">
+								<ul class="actions" style="text-align: center;">
+									<li><input type="submit" value="SignUp" class="special" onclick="home" /></li>
+	
+								</ul>
+							</div>
+							</div>
+						</form>
 					</nav>
 
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>My Concierge</h1>
+							</header>
+							<div class="content">
+								<p>A one stop for all your travel planner<br />and get the best deals on flights.</p>
+								<ul class="actions">
+									<li><a href="#one" class="button next scrolly" style="line-height: 2em;">Get Started</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
 				<!-- Main -->
-					<div id="main" class="alt">
+					<div id="main">
 
 						<!-- One -->
-							<section id="one">
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="svg/webbannerimages_bus.svg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Bus</a></h3>
+										<p>Book bus here</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="svg/webbannerimages_Hotels.svg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Hotel</a></h3>
+										<p>Book your hotel</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="svg/webbannerimages_homestay.svg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Home Stay</a></h3>
+										<p>Know mare about home stay</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="svg/webbannerimages_cabs.svg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Cabs</a></h3>
+										<p>Books your cabs here</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="svg/webbannerimages_Meal.svg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Meals</a></h3>
+										<p>Get the best resturants</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="svg/webbannerimages_entertainment.svg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Entertainment</a></h3>
+										<p>What's happening in the city</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="svg/webbannerimages_adventure.svg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Adventure</a></h3>
+										<p>Go crazy the way you like</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="svg/webbannerimages_more.svg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">More</a></h3>
+										<p>Information</p>
+									</header>
+								</article>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
 								<div class="inner">
 									<header class="major">
-										<h1>Holidays</h1>
+										<h2>About Concierge</h2>
 									</header>
-										<div class="slideshow-container">
-										<div class="mySlides fade">
-										  <img src="svg/banner_genric_page_london.svg" style="width:100%">
-										</div>
-										<div class="mySlides fade">
-										  <img src="svg/banner_genric_page_new_york.svg" style="width:100%">
-										</div>
-										<div class="mySlides fade">
-										  <img src="svg/banner_genric_page_rome.svg" style="width:100%">
-										</div>
-										<div class="mySlides fade">
-										  <img src="svg/banner_genric_page_paris.svg" style="width:100%">
-										</div>
-										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-										<a class="next" onclick="plusSlides(1)">&#10095;</a>
-										</div>
+									<p>At Flightsbank, we are experts when it comes to planning a trip and are committed to offer unbeatable value and exceptional service. Flightsbank has negotiated direct agreements with the worldâ€™s leading airline consolidators to provide most economical airfare deals to our customers without compromising on great service.Our airfare analysts research thousands of published and negotiated fares on multiple Global Distribution Systems (GDS) in order to create unique pricing and destination combos resulting in custom travel options for you.We believe there's no substitute for one-on-one, bespoke service and that makes us a little different than majority of online travel websites. Our team of airfare experts have years of experience in planning complex flight itineraries and we all share a passion for travel which drives us to go the extra mile while helping you plan and book your travel.Thanks to our close relationship with major travel suppliers and airlines, we can help you book military fares, una										ccompanied minor travel, and we have special rates for groups too.Whatever destination is on your mind we can help as Flightsbank covers just about everywhere and yes that includes Cuba too. So whenever and wherever you plan to fly book with Flightsbank</p>
 
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 								</div>
 							</section>
 
@@ -112,7 +214,7 @@
 									<div class="contact-method">
 										<span class="icon alt fa-phone"></span>
 										<h3>Phone</h3>
-										<span> +1-855-636-0786</span>
+										<span>+1-855-636-0786</span>
 									</div>
 								</section>
 								<section>
@@ -138,9 +240,6 @@
 								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
 								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
 						</div>
 					</footer>
 
@@ -154,30 +253,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script>
-				var slideIndex = 1;
-				showSlides(slideIndex);
-
-				function plusSlides(n) {
-					showSlides(slideIndex += n);
-				}
-
-				function currentSlide(n) {
-  					showSlides(slideIndex = n);
-				}
-
-				function showSlides(n) {
- 					var i;
-					var slides = document.getElementsByClassName("mySlides");
-					var dots = document.getElementsByClassName("dot");
-					if (n > slides.length) {slideIndex = 1}    
-					if (n < 1) {slideIndex = slides.length}
-					for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
-					}
-					slides[slideIndex-1].style.display = "block";
-				}
-			</script>
 
 	</body>
 </html>
