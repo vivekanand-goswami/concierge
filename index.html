@@ -26,15 +26,50 @@
 						<a href="index.html" class="logo"><img src="svg/logo_horizontal_white.svg" alt="LogoOfConcierge" style="height: 100%;"></a>
 						<input type="text" placeholder="Search.." id="searchicon" />
 						<nav style="margin: 4px 0 0">
-							<a href="sign_in.html">Sign-In</a>
+							<a href="#menu">Sign In</a>
 						</nav>
 					</header>
 
 				<!-- Menu -->
 					<nav id="menu">
-						<ul class="links">
-							<li><a href="sign_in.html">sign in</a></li>
-						</ul>
+						<a href="index.html" class="signin"><img src="svg/logo_horizontal_white.svg" alt="LogoOfConcierge" style="height: 90%; width: 100%;"></a>
+
+
+						<form method="post" action="#">
+							<div class="row uniform">
+							<div class="6u 12u$(xsmall)" style="margin: auto; float: none; padding: 1em 0 0;">
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Username/Email" style="text-align:center;" />
+							</div>
+							<div class="6u$ 12u$(xsmall)" style="margin: auto; float: none; padding: 1em 0 0;">
+								<input type="password" name="password" id="demo-email" value="" placeholder="Password" style="text-align:center;" />
+							</div>
+							<div class="12u$" id="sign-in_reset">
+								<ul class="actions" style="text-align: center;">
+									<li><input type="submit" value="Sign In" class="special" onclick="home" /></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</div>
+
+							<div id="sign-or">
+								<h4 style="color:#4c4c4c;"> Or </h4>
+							</div>
+		
+							<div class="inner" id="signin-social-icon">
+								<ul class="icons" style="margin: 1%;">
+									<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon alt fa-google"><span class="label">Google</span></a></li>
+									<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</div>
+							<div class="12u$">
+								<ul class="actions" style="text-align: center;">
+									<li><input type="submit" value="Sign Up" class="special" onclick="home" /></li>
+	
+								</ul>
+							</div>
+							</div>
+						</form>
 					</nav>
 
 				<!-- Banner -->
